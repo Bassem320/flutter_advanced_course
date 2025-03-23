@@ -1,8 +1,8 @@
-# new_exp_flut
+# Flutter Advanced Course
 
 A new Flutter project.
 
-## Getting Started
+## :art: System Design
 
 This project is a starting point for a Flutter application.
 
