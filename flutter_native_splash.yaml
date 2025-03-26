@@ -5,3 +5,5 @@ flutter_native_splash:
 
   # Following are specific parameters for Android 12+.
   android_12:
+    color: "#ffffff"
+    image: assets/images/splash-android12.png
