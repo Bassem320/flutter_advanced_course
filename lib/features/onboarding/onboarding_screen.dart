@@ -4,6 +4,7 @@ import 'package:new_exp_flut/core/theming/style.dart';
 import 'package:new_exp_flut/features/onboarding/widgets/doctor_image_and_text.dart';
 import 'package:new_exp_flut/features/onboarding/widgets/get_started_button.dart';
 
+import '../../core/theming/spacing.dart';
 import 'widgets/doc_logo_and_name.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -19,7 +20,8 @@ class OnboardingScreen extends StatelessWidget {
             child: Column(
               children: [
                 DocLogoAndName(),
-                SizedBox(height: 30.h),
+                // SizedBox(height: 30.h),
+                verticalSpace(30),
                 const DoctorImageAndText(),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 30.w),
@@ -30,7 +32,7 @@ class OnboardingScreen extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyles.font13GrayRegular,
                       ),
-                      SizedBox(height: 30.h),
+                      verticalSpace(30),
                       const GetStartedButton(),
                     ],
                   ),
