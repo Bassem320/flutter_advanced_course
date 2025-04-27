@@ -33,7 +33,7 @@ dependencies:
   # State management
   flutter_bloc: ^9.1.0
   # Code generator (mainly used with cubit & retrofit)
-  freezed: ^3.0.4
+  freezed: ^3.0.6
   freezed_annotation: ^3.0.0
   # for dependency injection
   get_it: ^8.0.3
@@ -58,6 +58,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  # A build system for Dart code generation and modular compilation.
+  build_runner: ^2.4.15
+
 
 dev_dependencies:
   flutter_test:
