@@ -43,10 +43,10 @@ dependencies:
   # Networking
   dio: ^5.8.0+1
   retrofit: ^4.4.2
-  retrofit_generator: ^9.1.9
+  retrofit_generator: ^10.0.2
   pretty_dio_logger: ^1.4.0
   # localiztion
-  intl: ^0.19.0
+  intl: ^0.20.2
   easy_localization: ^3.0.7+1
   # for splash screen
   flutter_native_splash: ^2.4.5
@@ -71,7 +71,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
