@@ -6,17 +6,24 @@ import 'package:new_exp_flut/core/networking/api_result.dart';
 
 import '../../data/models/login_request_body.dart';
 import 'login_state.dart';
+
 class LoginCubit extends Cubit<LoginState> {
   final LoginRepo _loginRepo;
+
   LoginCubit(this._loginRepo) : super(const LoginState.initial());
 
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final formKey = GlobalKey<FormState>();
 
-  void emitLoginStates(LoginRequestBody loginRequestBody) async {
+  void emitLoginStates() async {
     emit(const LoginState.loading());
-    final response = await _loginRepo.login(loginRequestBody);
+    final response = await _loginRepo.login(
+      LoginRequestBody(
+        email: emailController.text,
+        password: passwordController.text,
+      ),
+    );
     switch (response) {
       case Success(data: final data):
         emit(LoginState.success(data));
