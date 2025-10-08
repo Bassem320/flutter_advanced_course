@@ -5,6 +5,8 @@ import 'package:new_exp_flut/features/login/ui/screens/login_screen.dart';
 import '../../features/home/ui/screens/home_screen.dart';
 import '../../features/login/logic/cubits/login_cubit.dart';
 import '../../features/onboarding/onboarding_screen.dart';
+import '../../features/sign_up/logic/sign_up_cubit.dart';
+import '../../features/sign_up/ui/sign_up_screen.dart';
 import '../di/dependency_injection.dart';
 import 'routes.dart';
 
@@ -23,6 +25,13 @@ class AppRouter {
                 create: (context) => getIt<LoginCubit>(),
                 child: const LoginScreen(),
               ),
+        );
+      case Routes.signupScreen:
+        return MaterialPageRoute(
+          builder:(_) => BlocProvider<SignupCubit>(
+            create: (context) => getIt<SignupCubit>(),
+            child: const SignupScreen(),
+          ),
         );
       case Routes.homeScreen:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
